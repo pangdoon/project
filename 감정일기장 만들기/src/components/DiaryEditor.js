@@ -31,6 +31,7 @@ const DiaryEditor = ({isEdit, originData}) => {
   const handleSubmit = () => {
     if(content.length < 1) {
       contentRef.current.focus();
+
       return;
     }
 
@@ -46,7 +47,7 @@ const DiaryEditor = ({isEdit, originData}) => {
   };
 
   const handleRemove = () => {
-    if(window.confirm('정말 삭제하시겠습니까??')){
+    if(window.confirm('정말 삭제하시겠습니까?')){
       onRemove(originData.id);
       navigate('/', {replace:true})
     }
