@@ -29,10 +29,10 @@ const Diary = () => {
         );
         console.log(targetDiary)
         if(targetDiary){
-          //일기가 존재할 때 
+          //일기가 존재할 때의 경우 
           setData(targetDiary);
         } else { 
-          //일기가 없을 때
+          //일기가 없을 때의 경우
           alert("없는 일기입니다.")
           navigate('/', {replace:true})
         }
